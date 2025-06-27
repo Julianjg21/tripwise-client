@@ -1,10 +1,12 @@
 import {Form, Button, Card} from 'react-bootstrap';
 import { useState} from "react";
 import {Link} from "react-router-dom";
-import {useAuthService} from "../../services/api/Auth/authService.mjs";
+import {useAuthService} from "../../services/api/auth/authService.mjs";
 import {useAlert} from "../../hooks/useAlert.mjs";
 import {useNavigate} from "react-router-dom";
-function SignupForm() {
+
+
+export default function SignupForm() {
 
     // State variables for form fields
     const [fullName, setFullName] = useState("");
@@ -115,4 +117,3 @@ function SignupForm() {
     )
 }
 
-export default SignupForm;

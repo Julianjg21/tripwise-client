@@ -48,7 +48,7 @@ export default function LoginForm() {
                 <Card.Body>
                     <Card.Title className="text-center fs-1 mb-4">Login</Card.Title>
                     <Form onSubmit={handleSubmit}>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Group className="mb-3" controlId="formLoginEmail">
                             <Form.Control
                                 required
                                 type="email"
@@ -58,7 +58,7 @@ export default function LoginForm() {
                             />
                         </Form.Group>
 
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Group className="mb-3" controlId="formLoginPassword">
                             <Form.Control
                                 required
                                 type="password"
@@ -75,9 +75,9 @@ export default function LoginForm() {
                         </div>
                     </Form>
                     <div className="text-center mb-4 mt-3 d-flex justify-content-center align-items-center gap-2">
-                        <Link  onClick={() => setShowForgetPasswordModal(true)} className="text-decoration-none mr-4">
+                        <Button  onClick={() => setShowForgetPasswordModal(true)} className=" border-0 bg-light text-primary  mr-4">
                             ¿Forgot Password?
-                        </Link>
+                        </Button>
                         <Link to="/auth/signup" className="text-decoration-none ms-4">
                             Sign Up
                         </Link>
